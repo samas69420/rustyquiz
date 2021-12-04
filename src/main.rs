@@ -1,7 +1,6 @@
-use quiz::{domanda,setup,run};
 
 fn main() {
-    let mut domande = Vec::<domanda::Domanda>::new();
-    setup(&mut domande);
-    run(&domande);
+    let mut domande = Vec::<quiz::domanda::Domanda>::new();
+    quiz::setup(&mut domande);
+    quiz::run(&domande);
 }

@@ -1,10 +1,9 @@
+pub mod domanda;
+pub mod risposta;
+
 use std::{io, fs};
 use rand;
 use rand::Rng;
-pub mod domanda;
-pub mod risposta;
-use risposta::Risposta as Risposta;
-use domanda::Domanda as Domanda;
 
 pub fn randomizzavec<T>(vet: &mut Vec<T>)
 where T: Clone

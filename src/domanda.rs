@@ -1,5 +1,5 @@
 use std::fmt;
-use super::risposta::Risposta as Risposta;
+use crate::risposta::Risposta;
 
 #[derive(Debug,Clone)]
 pub struct Domanda{
