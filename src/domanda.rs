@@ -1,4 +1,5 @@
 use std::fmt;
+use std::cmp::PartialEq;
 use crate::risposta::Risposta;
 
 #[derive(Debug,Clone)]
@@ -14,6 +15,15 @@ impl Domanda {
             testo: String::from(testo),
             risposte: risposte 
         } 
+    }
+}
+
+impl PartialEq for Domanda{
+    fn eq(&self, other: &Domanda) -> bool
+    {
+        if other.testo == self.testo &&
+            other.risposte == self.risposte { true }
+        else { false }
     }
 }
 
